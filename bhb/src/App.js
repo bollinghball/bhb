@@ -7,10 +7,13 @@ import {
 import './App.css';
 import logo from './images/logo.png';
 import Banner from './components/Banner';
-import Header from "./components/Header";
-import PageContent from "./components/PageContent";
+import {About} from './components/About';
+import Header from './components/Header';
+import PageContent from './components/PageContent';
+import Footer from './components/Footer';
 
 class App extends Component {
+
   render() {
     return (
       <Router>
@@ -24,7 +27,9 @@ class App extends Component {
                           <Home events={this.state.events} {...props} /> */}
                           <Header img={logo} url="www.bollinghball.com" homepage/>
                           <Banner />
+                          <About />
                           <PageContent />
+                          <Footer img={logo} url="www.bollinghball.com" homepage/>
                       </div>
                   );
               }
@@ -37,6 +42,7 @@ class App extends Component {
                           {/* <Header img={logo} url="#/" homepage />
                           <Details events={this.state.events} {...props} /> */}
                           <Header img={logo} url="www.bollinghball.com" homepage/>
+                          <Footer img={logo} url="www.bollinghball.com" homepage/>
                       </div>
                   );
               }

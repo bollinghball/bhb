@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import {About} from './About';
 import Banner from './Banner';
-import Cards from './Cards';
+import CardList from './CardList';
 
 
 const StyledPageContent = styled.div`
@@ -12,7 +12,7 @@ const StyledPageContent = styled.div`
     margin-left: auto;
     margin-right: auto;
     max-width: 1170px;
-    min-height: 100vh;
+    min-height: 75vh;
     /* padding-left: 24px;
     padding-right: 24px; */
 
@@ -25,9 +25,9 @@ const StyledPageContent = styled.div`
 class PageContent extends Component {
     render() {
         return (
+                
             <StyledPageContent>
-                <About />
-                <Cards />
+                <CardList />
             </StyledPageContent>
         );
     }
